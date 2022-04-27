@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     </script>
@@ -21,7 +22,7 @@
           <!-- HEADER STAR-->
           <header class="header">
                 <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-light"id="fixnav">
                     <button type="button" class="btn p-0 logo mr-3">    
                         <a class="navbar-brand" href="#"><img src="https://www.tataaig.com/logo-min.png" alt="Please reload the page" width="40" height="40"></a>
                     </button>
@@ -87,83 +88,383 @@
         <div class="container">
         <div class="container-fluid">Get associated with Tata AIG by sharing few of the contact details to get back:
         </div>
-        <div class="container-fluid mt-5"style="color:#044285;font-weight:bold;background-color:#ebebeb;border-radius:5px">Details Required:
-          <form>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputEmail4">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="inputPassword4">Password</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputAddress">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="form-group">
-              <label for="inputAddress2">Address 2</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputCity">City</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
-              <div class="form-group col-md-4">
-                <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
-                  <option selected>Choose...</option>
-                  <option>...</option>
+        
+          <form action="" class="mt-4 p-5" style="background-color: #ECEDF1; box-shadow: 3px 3px 6px #bfc3cf, -3px -3px 6px #fff !important;
+  border:none; border-radius: 25px;" >
+          <h3>Details Required</h3>
+          <div class="row ">
+            <div class="col-12 col-sm-4 mt-4">
+              <div class="form-group">
+                <label for="title">Title</label>
+                <select id="title" class="form-select p-2 input_color" aria-label="Default select example">
+                  <option value="mr" class="op">Mr.</option>
+                  <option value="ms" class="op">Ms.</option>
                 </select>
               </div>
-              <div class="form-group col-md-2">
-                <label for="inputZip">Zip</label>
-                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12 col-sm-4 mt-4">
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  id="firstname"
+                  placeholder="First Name"
+                />
               </div>
             </div>
-            <div class="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
-                  Check me out
-                </label>
+            <div class="col-12 col-sm-4 mt-4">
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  id="lastname"
+                  placeholder="Last Name"
+                />
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
-          </form>
+          </div>
+          <div class="row ">
+            <div class="col-12 col-sm-4 mt-4">
+              <div class="form-group">
+                <label for="phoneno">Phone Number</label>
+                <input
+                  type="tel"
+                  class="form-control p-2"
+                  id="phoneno"
+                  placeholder="Phone Number"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 mt-4">
+              <div class="form-group">
+                <label for="alternatemobilno">Alternate Mobile Number</label>
+                <input
+                  type="tel"
+                  class="form-control p-2"
+                  id="alternatemobilno"
+                  placeholder="Mobile Number"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 mt-4">
+              <div class="form-group ">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  class="form-control p-2"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-12 col-sm-4 mt-4">
+              <div class="form-group ">
+                <label for="city">City</label>
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  id="city"
+                  placeholder="City"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 mt-4">
+              <div class="form-group">
+                <label for="state">State</label>
+                <select id="state" class="form-select p-2 input_color" aria-label="Default select example" >
+                  <option value="" disabled selected>Select</option>
+                  <option value="mr" class="op">Mr.</option>
+                  <option value="ms" class="op">Ms.</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 mt-4">
+              <div class="form-group">
+                <label for="state">New To Industry</label>
+                <select id="state" class="form-select p-2 input_color" aria-label="Default select example" >
+                  <option value="" disabled selected>Select</option>
+                  <option value="yes" >Yes</option>
+                  <option value="ms" >No</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-4 mt-4">
+              <div class="form-group ">
+                <label for="currentcompany">Current Company Working With</label>
+                <input
+                  type="text"
+                  class="form-control p-2"
+                  id="currentcompany"
+                  placeholder="Current Company"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 mt-4">
+              <div class="form-group">
+                <label for="jobtype">Job Type</label>
+                <select id="jobtype" class="form-select p-2 input_color" aria-label="Default select example" >
+                  <option value="" disabled selected>Select</option>
+                  <option value="full time" class="op">Full Time</option>
+                  <option value="part time" class="op">Part Time</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 mt-4">
+              <div class="form-group">
+                <label for="areyouassociatedwith">Are You Associated With</label>
+                <select id="jobtype" class="form-select p-2 input_color" aria-label="Default select example" >
+                  <option value="" disabled selected>Select</option>
+                  <option value="mutual fund" class="op">Mutual Fund</option>
+                  <option value="life insurance" class="op">Life Insurance</option>
+                  <option value="genral insurance" class="op">General Insurance</option>
+                </select>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-12 col-sm-4 mt-4">
+              <div class="form-group">
+                <label for="lineofbusiness">Line Of Business</label>
+                <select id="lineofbusiness" class="form-select p-2 input_color" aria-label="Default select example" >
+                  <option value="" disabled selected>Travel</option>
+                  <option value="mutual fund" class="op">Motor</option>
+                  <option value="life insurance" class="op">Life Insurance</option>
+                  <option value="genral insurance" class="op">General Insurance</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 mt-4">
+              <div class="form-group">
+                <label for="areyouassociatedwith">Annual Business Potential</label>
+                <select id="jobtype" class="form-select p-2 input_color" aria-label="Default select example" >
+                  <option value="" disabled selected>Select</option>
+                  <option value="mutual fund" class="op">Mutual Fund</option>
+                  <option value="life insurance" class="op">Life Insurance</option>
+                  <option value="genral insurance" class="op">General Insurance</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn mt-5 btn-primary  rounded-pill proceed_button" style="width: 22%;">Proceed</button>
+          <p class="proceed_para">By clicking proceed, I agree to override my DNCR</p>
+        </form>
         </div>
-        <div class="w-100 p-3 container px-6 mt-3"style="background-color:#F5F5F5">
+        <div class="w-100 p-3 container px-6 mt-3"style="background-color:#F5F5F5;">
           <h3 style="color: #044285;text-align: center;">Why You Should Join Tata AIG</h3>
           <div class="row">
-            <div class="col-3 text-center">
-              <div class="rounded-circle shadow-sm p-3 mb-5 bg-text-secondary"style="width:150px;height:100px;">
+            <div class="col-3 text-center"style="border-right:2px dotted gray">
+              <div class="rounded-circle shadow-sm p-3 mb-5 bg-text-secondary"style="border-radius:50%">
               <img src="https://www.tataaig.com/s3/001_verified_06addff7a2.svg">
               </div>
               <p>Secure your customers with India’s most trusted brand, Tata AIG</p>
             </div>
-    <div class="col-3 text-center">
-      <div class="rounded-circle shadow-sm p-3 mb-5 bg-text-secondary"style="width:150px;height:100px">
-        <img src="https://www.tataaig.com/s3/Group_13820_d10fd32bdb.svg">
+    <div class="col-3 text-center"style="border-right:2px dotted gray">
+      <div class="rounded-circle shadow-sm p-3 mb-5 bg-text-secondary"style="border-radius:50%">
+        <img src="https://www.tataaig.com/s3/Group_13820_d10fd32bdb.svg"border-radius: 50%;>
         </div>
       <p>At Tata AIG we keep our values first i.e. PEOPLE, EMPATHY, INTEGRITY, CUSTOMER FIRST</p>
     </div>
-    <div class="col-3 text-center">
-      <div class="rounded-circle shadow-sm p-3 mb-5 bg-text-secondary"style="width:150px;height:100px">
+    <div class="col-3 text-center"style="border-right:2px dotted gray">
+      <div class="rounded-circle shadow-sm p-3 mb-5 bg-text-secondary"style="border-radius:50%">
         <img src="https://www.tataaig.com/s3/Group_13823_ed0b1c2869.svg">
         </div>
       <p>You can look for long term association and growth in your career</p>
     </div>
     <div class="col-3 text-center">
-      <div class="rounded-circle shadow-sm p-3 mb-5 bg-text-secondary"style="width:150px;height:100px">
+      <div class="rounded-circle shadow-sm p-3 mb-5 bg-text-secondary"style="border-radius:50%">
         <img src="https://www.tataaig.com/s3/Group_13824_2128ec5b97.svg">
         </div>
       <p>Great earning opportunity along with recognition for your hard work</p>
     </div>
           </div>
         </div>
+        <div class="container"style="padding:30px">
+          <div class="row">
+              <div class="col-12 col-md-6">
+                  <h3 class="whatoffers"style="color:#044285">What Tata AIG offers you?</h3>
+                  <div class="offer">
+                      <ul>
+                          <li class="tick">Learning opportunity for you with our exclusive Tata AIG Academy which helps you to enhance your skills</li>
+                          <li class="tick">Claims servicing in need is what customer buys & at Tata AIG customer claim are serviced by an experienced in-house claims management team</li>
+                          <li class="tick">Comprehensive product solutions - Motor, Health, Travel & Corporate risk solutions</li>
+                          <li class="tick">Business development support and handhold at each progressive step</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 px-3" style="text-align: center;">
+                      <img src="	https://www.tataaig.com/s3/Group_4670_6b91069233.svg" alt="" style="height: auto; width: 80%;" alt="img of insurance">
+              </div>
+          </div>
+      </div>
+      <div class="image">
+        <div class="row" style="border-bottom-style: dotted;margin: 30px;padding: 20px;">
+        </div>
+        
+      </div>
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+
+  <footer class="text-center text-lg-start text-secondary"style="border-radius:25px;background-color:rgb(245,245,245)">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <div class="rounded bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 100px; height: 100px;">
+            <img src="https://www.tataaig.com/logo-min.png" height="70" alt=""
+                 />
+          </div>
+
+          <p class="text-center">Download Our App</p>
+          <div class="d-grid gap-4">
+            <button class="btn btn-dark" type="button">Get it on Google Play Store</button></br></br>
+            <button class="btn btn-dark" type="button">Download on the App Store</button>
+          </div>
+          <div style="float:left;margin-left:6px;">Follow Us</div>
+          <div style="margin: 20px;padding-top: 5px;" >
+          <ul class="list-unstyled d-flex flex-row justify-content-center">
+            <li>
+              <a class="text-secondary px-2" href="#">
+                <i class="fab fa-facebook circle"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-secondary px-2" href="#">
+                <i class="fab fa-linkedin circle"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-secondary px-2" href="#">
+                <i class="fab fa-twitter circle"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-secondary px-2" href="#">
+                <i class="fab fa-instagram circle"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-secondary px-2" href="#">
+                <i class="fab fa-youtube circle"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4"style="color:#044285">Company</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#" class="text-secondary"><i></i>About Us</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-secondary"><i ></i>Public Disclosures</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-secondary"><i></i>Contact Us</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-secondary"><i ></i>Careers</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-secondary"><i></i>Agent Registration</a>
+            </li>
+            
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4"style="color:#044285">Resources</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="#" class="text-secondary"><i></i>Blog</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-secondary"><i ></i>Insurance FAQs</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4"style="color:#044285">Services</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p><i></i>Renewal</p>
+            </li>
+            <li>
+              <p><i></i>Self Service</p>
+            </li>
+            <li>
+              <p><i></i>Vehicle Inspection</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+  </footer>
+
+</div>
+<!-- End of .container -->
+
+<table class="zui-table zui-table-rounded container"style="background-color:rgb(245,245,245);border-radius:25px;">
+  <thead>
+      <tr>
+          <th style="text-align: center;border-right:1px dotted gray;">Health Insurance</th>
+          <th style="text-align: center;border-right:1px dotted gray;">Motor Insurance</th>
+          <th style="text-align: center;border-right:1px dotted gray;">Travel Insurance</th>
+          <th style="text-align: center;">Other Insurances</th>
+          
+      </tr>
+  </thead>
+  
+</table>
+<div class="text-center container-fluid" style=" width:3000px;margin-top: 30px; padding: 0; background-color: #264a9f; color: white;width:100%;height:100%">
+  <div class="pt-5 pb-4" style="width: 70%; margin-left: 15%;border-bottom: 2px dotted whitesmoke;">
+    <p></p>
+    Disclaimer | Terms of Use | DownloadsIRDAI
+    GST Registration Numbers | Privacy Policy
+    Grievance Redressal Policy | General
+  </div>
+  <br>
+  <div style="width: 70%; margin-left: 15%">
+    2008, Tata AIG General Insurance Company
+    Limited, all rights reserved.
+    Registered Office : Peninsula Business Park,
+    Tower A, 15th Floor, G.K.Marg, Lower Parel,
+    Mumbai - 400 013, Maharashtra, India.
+    CINNumber : U85110MH2000PLC128425.
+    Registered with IRDA of India Regn.
+    No. 108. Insurance is the subject matter
+    of the solicitation.
+    For more details on benefits, exclusions,
+    limitations, terms and conditions, please read
+    sales brochure / policy wording carefully
+    before concluding a sale.
+    Toll Free Number : 1800 266 7780 / 1800 22
+    9966 (only for senior citizen policy holders).
+    Email Id – customersupport@tataaig.com.
+  </div>
       </div>
       </div>
     
